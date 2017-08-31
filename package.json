@@ -1,0 +1,27 @@
+{
+  "name": "webstarter",
+  "version": "1.0.0",
+  "description": "Webstarter is a boilerplate for quickly starting a new project. webstarter contains all the configuration files needed for gulp, webpack for compiling babel, sass etc.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "arpit bansal",
+  "license": "ISC",
+  "devDependencies": {
+    "apache-server-configs": "^2.14.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}
