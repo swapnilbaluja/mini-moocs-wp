@@ -598,6 +598,27 @@ form {
     }
 }
 
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-grow: 1;
+    align-items: flex-start;
+    .gallery-item{
+        width: 250px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        min-height: 170px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
 .slide {
     min-height: 100%;
     display: -webkit-flex;
@@ -901,6 +922,38 @@ article {
                     }
                 }
             }
+        }
+    }
+}
+
+//styling wordpress carousel plugin
+.wordpress-carousel-free-section{
+    padding: 15px;
+    overflow: hidden;
+    .slick-list{
+        width: 1500px;
+    }
+    .slick-next{
+        background: white;
+        padding: 25px 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+        i{
+            position: relative;
+            top: -15px;
+            right: 5px;
+        }
+    }
+    .slick-prev{
+        background: white;
+        padding: 25px 25px;
+        border-radius: 50%;
+        margin-left: 35px;
+        i{
+            position: relative;
+        top: -15px;
+        right: 5px;
+
         }
     }
 }

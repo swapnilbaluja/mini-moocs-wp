@@ -439,6 +439,38 @@ form input[type="submit"] {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
 
+.gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .gallery .gallery-item {
+    width: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 170px; }
+    .gallery .gallery-item img {
+      width: 100%; }
+
 .slide {
   min-height: 100%;
   display: -webkit-flex;
@@ -627,6 +659,30 @@ article ol {
   margin-right: 5px;
   position: relative;
   top: 7px; }
+
+.wordpress-carousel-free-section {
+  padding: 15px;
+  overflow: hidden; }
+  .wordpress-carousel-free-section .slick-list {
+    width: 1500px; }
+  .wordpress-carousel-free-section .slick-next {
+    background: white;
+    padding: 25px 25px;
+    border-radius: 50%;
+    margin-right: 10px; }
+    .wordpress-carousel-free-section .slick-next i {
+      position: relative;
+      top: -15px;
+      right: 5px; }
+  .wordpress-carousel-free-section .slick-prev {
+    background: white;
+    padding: 25px 25px;
+    border-radius: 50%;
+    margin-left: 35px; }
+    .wordpress-carousel-free-section .slick-prev i {
+      position: relative;
+      top: -15px;
+      right: 5px; }
 
 .wpcf7 form * {
   border: none; }
