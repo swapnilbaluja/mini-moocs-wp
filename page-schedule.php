@@ -43,6 +43,15 @@
 				<div class="desc">A lecture by stephen hawking on the theory of black holes</div>
 			</div>
 		</li>
+		<li>
+			<div class="direction-l">
+				<div class="flag-wrapper">
+					<span class="flag">Lecture by Stephen hawking</span>
+					<span class="time-wrapper"><span class="time">1 Jan 2017</span></span>
+				</div>
+				<div class="desc">A lecture by stephen hawking on the theory of black holes</div>
+			</div>
+		</li>
 		
 	</ul>
 </div><!-- .wrap -->
