@@ -90,39 +90,147 @@
 	<div class="mapblock" id="map" ></div>
 </div>
 <script>
-function initMap() {
-var mycenter=new google.maps.LatLng(26.4502,80.1921);
-var mycenter1=new google.maps.LatLng(21.1944,81.2989);
-var mapcanvas=document.getElementById("map");
-var myoptions={center:mycenter,zoom:5};
-var map = new google.maps.Map(mapcanvas,myoptions);
-var marker=new google.maps.Marker({position:mycenter,
-animationn:google.maps.Animation.pink});
-var marker1=new google.maps.Marker({position:mycenter1,
-animationn:google.maps.Animation.pink});
-google.maps.event.addListener(marker,'click',function()
-{
-var temp=map.getZoom();
-map.setZoom(9);
-map.setCenter(marker.getPosition());
-window.setTimeout(function()
-{
-map.setZoom(temp);
-},3000);
-}
-);
-var  infowindow=new google.maps.InfoWindow({
-content:'Pranveer Singh Institute of Technology'
-});
-var  infowindow1=new google.maps.InfoWindow({
-content:'Bhilai Institute of Technology, Durg, Chhattisgarh'
-});
-infowindow.open(map,marker);
-infowindow1.open(map,marker1);
-marker.setMap(map);
-marker1.setMap(map);
-}
-</script>
+      
+      function initMap() {
+      	var mapcanvas=document.getElementById("map");
+      	var india=new google.maps.LatLng(28.7041,77.1025);
+
+        var mycenter1=new google.maps.LatLng(26.4502,80.1921);
+        var mycenter2=new google.maps.LatLng(21.1944,81.2989);
+        var mycenter3=new google.maps.LatLng(24.7555,92.7880);
+        var mycenter4=new google.maps.LatLng(19.1445,72.8205);
+        var mycenter5=new google.maps.LatLng(30.57,76.47);
+        var mycenter6=new google.maps.LatLng(18.19,84.74);
+        var mycenter7=new google.maps.LatLng(10.9026,76.9004);
+        var mycenter8=new google.maps.LatLng(22.377986,70.787603);
+        var mycenter9=new google.maps.LatLng(31.5778266,74.9558821);
+        var mycenter10=new google.maps.LatLng(18.2213,72.8311);
+        var mycenter11=new google.maps.LatLng(17.4296,73.9940);
+        var mycenter12=new google.maps.LatLng(16.5431,81.4964);
+
+        var myoptions1={center:india,zoom:6};
+        var map1 = new google.maps.Map(mapcanvas,myoptions1);
+        
+       var marker1=new google.maps.Marker({position:mycenter1,
+        animationn:google.maps.Animation.pink});
+       var marker2=new google.maps.Marker({position:mycenter2,
+        animationn:google.maps.Animation.pink});
+       var marker3=new google.maps.Marker({position:mycenter3,
+        animationn:google.maps.Animation.pink});
+
+       var marker4=new google.maps.Marker({position:mycenter4,
+        animationn:google.maps.Animation.pink});
+       var marker5=new google.maps.Marker({position:mycenter5,
+        animationn:google.maps.Animation.pink});
+       var marker6=new google.maps.Marker({position:mycenter6,
+        animationn:google.maps.Animation.pink});
+
+       var marker7=new google.maps.Marker({position:mycenter7,
+        animationn:google.maps.Animation.pink});
+       var marker8=new google.maps.Marker({position:mycenter8,
+        animationn:google.maps.Animation.pink});
+       var marker9=new google.maps.Marker({position:mycenter9,
+        animationn:google.maps.Animation.pink});
+
+       var marker10=new google.maps.Marker({position:mycenter10,
+        animationn:google.maps.Animation.pink});
+       var marker11=new google.maps.Marker({position:mycenter11,
+        animationn:google.maps.Animation.pink});
+       var marker12=new google.maps.Marker({position:mycenter12,
+        animationn:google.maps.Animation.pink});
+     
+       var  infowindow1=new google.maps.InfoWindow({
+        content:'PSIT'
+       });
+       var  infowindow2=new google.maps.InfoWindow({
+        content:'Bhilai Institute of Technology'
+       });
+       var  infowindow3=new google.maps.InfoWindow({
+        content:'National Institute of Technology,Silchar'
+       });
+      
+
+      var  infowindow4=new google.maps.InfoWindow({
+        content:'Fr. Conceicao Rodrigues College of Engineering'
+       });
+       var  infowindow5=new google.maps.InfoWindow({
+        content:'Chitkara University'
+       });
+       var  infowindow6=new google.maps.InfoWindow({
+        content:'National Institute of Science and Technology,Brahmapur'
+       });
+      
+
+var  infowindow7=new google.maps.InfoWindow({
+        content:'Amrita Vishwa Vidyapeetham University'
+       });
+       var  infowindow8=new google.maps.InfoWindow({
+        content:'Marwadi Education, Rajkot, Gujarat'
+       });
+       var  infowindow9=new google.maps.InfoWindow({
+        content:'Amritsar College of Engineering and Technology'
+       });
+      
+
+var  infowindow10=new google.maps.InfoWindow({
+        content:'KMDC'
+       });
+       var  infowindow11=new google.maps.InfoWindow({
+        content:'BIIT'
+       });
+       var  infowindow12=new google.maps.InfoWindow({
+        content:'Sagi Ramakrishnam Raju Engineering College'
+       });
+      
+var  infowindow13=new google.maps.InfoWindow({
+        content:'Pranveer Singh Institute of Technology'
+       });
+google.maps.event.addListener(marker1, 'click', function() {
+	infowindow1.close(map1,marker1);
+	
+     infowindow13.open(map1,marker1);
+	 
+  
+
+		
+  });
+        
+
+		infowindow1.open(map1,marker1);
+		infowindow2.open(map1,marker2);
+		infowindow3.open(map1,marker3);
+
+		infowindow4.open(map1,marker4);
+		infowindow5.open(map1,marker5);
+		infowindow6.open(map1,marker6);
+		
+		infowindow7.open(map1,marker7);
+		infowindow8.open(map1,marker8);
+		infowindow9.open(map1,marker9);
+		
+		infowindow10.open(map1,marker10);
+		infowindow11.open(map1,marker11);
+		infowindow12.open(map1,marker12);
+		
+		
+        marker1.setMap(map1);
+        marker2.setMap(map1);
+        marker3.setMap(map1);
+
+        marker4.setMap(map1);
+        marker5.setMap(map1);
+        marker6.setMap(map1);
+
+        marker7.setMap(map1);
+        marker8.setMap(map1);
+        marker9.setMap(map1);
+
+        marker10.setMap(map1);
+        marker11.setMap(map1);
+        marker12.setMap(map1);
+         
+      }
+    </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgi-TyVfVe658zDSN76J__4h8MSKB-tpU&callback=initMap"
 async defer></script>
 <?php get_footer();
