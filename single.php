@@ -19,10 +19,10 @@
                                 comments_template();
                             endif;
 
-                            the_post_navigation( array(
-                                'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'dolphin' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'dolphin' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . dolphin_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
-                                'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'dolphin' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'dolphin' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . dolphin_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
-                            ) );
+                            // the_post_navigation( array(
+                            //     'prev_text' => '<span class="screen-reader-text">' . __( 'Previous Post', 'dolphin' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Previous', 'dolphin' ) . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . dolphin_get_svg( array( 'icon' => 'arrow-left' ) ) . '</span>%title</span>',
+                            //     'next_text' => '<span class="screen-reader-text">' . __( 'Next Post', 'dolphin' ) . '</span><span aria-hidden="true" class="nav-subtitle">' . __( 'Next', 'dolphin' ) . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . dolphin_get_svg( array( 'icon' => 'arrow-right' ) ) . '</span></span>',
+                            // ) );
 
                         endwhile; // End of the loop.
                         ?>
