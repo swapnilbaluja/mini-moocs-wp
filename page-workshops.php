@@ -3,7 +3,7 @@
 	<div id="primary" class="content-area">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-md-8">
+				<div class="col-xs-12 col-md-10">
 					<main id="main" class="site-main" role="main">
 						<?php
 						while ( have_posts() ) : the_post();

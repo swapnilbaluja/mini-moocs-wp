@@ -54,9 +54,9 @@
 	</div><!-- .entry-content -->
 
 	<?php
-	if ( is_single() ) {
-		dolphin_entry_footer();
-	}
+	// if ( is_single() ) {
+	// 	dolphin_entry_footer();
+	// }
 	?>
 
 </article><!-- #post-## -->
